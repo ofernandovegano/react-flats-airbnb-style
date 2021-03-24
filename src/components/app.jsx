@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+require('dotenv').config()
 
 import flats from '../../data/flats';
 import FlatList from './flat_list';
