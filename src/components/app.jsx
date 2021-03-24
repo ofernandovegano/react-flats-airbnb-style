@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import process from 'dotenv';
+require('dotenv').config()
 import GoogleMapReact from 'google-map-react';
 
 import flats from '../../data/flats';
@@ -29,7 +29,7 @@ class App extends Component {
         />
         <div className="map-container">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API}}
+            bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_API}}
             defaultCenter={this.center()}
             defaultZoom={12}
           >
